@@ -44,5 +44,5 @@ client.connect("localhost", 1883, 60)
 for cid in range(NUM_CLIENTS):
     client.subscribe(f"fed/client/{cid}/params")
 
-logger.info("🚀 Servidor iniciado e aguardando atualizações dos clientes...")
+logger.info("Servidor iniciado e aguardando atualizações dos clientes...")
 client.loop_forever()
